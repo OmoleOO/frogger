@@ -11,6 +11,7 @@ let scoreDisplay = $('#score > span');
 let levelDisplay = $('#level > span');
 let healthDisplay = $('.heart > span');
 const modal = $('.modal');
+const modalBody = $('.modal-body');
 const replayBtn = $('#replay');
 const hiScore = $('#hi_score > span');
 
@@ -18,7 +19,7 @@ const hiScore = $('#hi_score > span');
   * @description Show modal
   * @returns {void}
   */
- function showModal(){
+ function showLossModal(){
     modal.style.display = 'flex';
     hiScore.textContent = player.score;
     replayBtn.addEventListener('click', function(e){
@@ -26,6 +27,16 @@ const hiScore = $('#hi_score > span');
       fullGameReset();
       modal.style.display = 'none';
     });
+ }
+
+ function showSuccessModal() {
+   showLossModal();
+   const header = $(".modal-body > h2");
+   header.textContent = "Awesome! You win!";
+   header.style.fontSize = "1.5em";
+   modalBody.style.color = "#0f0";
+   modalBody.insertBefore(header, modalBody.nextSibling);
+   modalBody.appendChild(appendChildToFragment([header]));
  }
 
 function fullGameReset(){
@@ -236,7 +247,7 @@ function earnNewLevel() {
 // player wins when they have a score above 500, having reached or passed 12 game levels
 function checkGameWinner() {
   if(player.score > 500 && player.level >= 12){
-    alert("Winner");
+    showSuccessModal();
   }
 }
 
@@ -250,7 +261,7 @@ function alertDanger(){
 // reset the game after collision
 function resetGame(){
   if(player.health <= 1){
-    showModal();
+    showLossModal();
   }
     setTimeout(function(){
       document.body.classList.remove("danger");

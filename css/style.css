@@ -73,7 +73,7 @@ body {
 
 /* Modal Styles */
 .modal {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .9);
     position: absolute;
     top: 0;
     width: 100%;
@@ -85,17 +85,17 @@ body {
 }
 
 .modal-content {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NMKL/ty4AFLOhU3cwIkgQxsCkYdJIADnscCF7NGkIAAAAASUVORK5CYII=
-    ) repeat;
+    /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAHUlEQVQYV2NMKL/ty4AFLOhU3cwIkgQxsCkYdJIADnscCF7NGkIAAAAASUVORK5CYII=
+    ) repeat; */
     width: 500px;
     height: 300px;
-    background-color: #fff;
+    background-color: linear-gradient(180deg, red, green);
     position: relative;
     border-radius: 5px;
-    color: #0241cc;
+    color: #f00;
 }
 
-.close {
+/* .close {
     font-size: 3rem;
     color: #000;
     position: absolute;
@@ -105,7 +105,7 @@ body {
     margin-top: -17px;
     cursor: pointer;
     padding: 8px;
-}
+} */
 
 .modal-body {
     display: flex;
@@ -121,5 +121,26 @@ body {
 }
 
 #replay {
+  font-size: 1em;
+  margin-top: 20px;
+  color: #000;
+  background-color: gold;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
   text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+              0 9px 46px 8px rgba(0, 0, 0, 0.12),
+              0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+#replay:hover {
+  background-color: orange;
+}
+
+#replay:active {
+  background-color: orange;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(4px);
 }
