@@ -23,7 +23,7 @@ This game was built with the following technology stack:
 
 
 ## Demo
-Visit [https://omoleoo.github.io/arcade-game](https://omoleoo.github.io/arcade-game) to play the game live.
+Visit [https://omoleoo.github.io/arcade-game](https://omoleoo.github.io/frogger) to play the game live.
 
 
 ## Collaboration
