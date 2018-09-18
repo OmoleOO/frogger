@@ -35,7 +35,7 @@ const hiScore = $('#hi_score > span');
    header.textContent = "Awesome! You win!";
    header.style.fontSize = "1.5em";
    modalBody.style.color = "#0f0";
-   modalBody.insertBefore(header, modalBody.nextSibling);
+   modalBody.insertBefore(header, modalBody.firstElementChild.nextSibling);
    modalBody.appendChild(appendChildToFragment([header]));
  }
 
