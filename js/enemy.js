@@ -1,11 +1,8 @@
 // Enemies our player must avoid
 let Enemy = function(posX, posY) {
-    this.x = posX;
-    this.y = posY;
+    let enemy = new GameObject(posX, posY, 'images/enemy-bug.png');
+    Object.assign(this, enemy);
     this.velocity = getRandomInt(100, 400);
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
 };
 
 // Update the enemy's position, required method for game
@@ -24,11 +21,6 @@ Enemy.prototype.update = function(dt) {
     }
 
     this.speedUp();
-};
-
-// Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 //increase Enemy speed based on player's level

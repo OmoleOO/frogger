@@ -1,13 +1,11 @@
 let Player = function(posX, posY) {
-    this.x = posX;
-    this.y = posY;
+    let player = new GameObject(posX, posY, 'images/char-boy.png');
+    Object.assign(this, player);
     this.collision = false;
     this.mark = 70;
     this.level = 1;
     this.health = 3;
     this.score = 0;
-    // The image/sprite for our player
-    this.player = 'images/char-boy.png';
 }
 
 // Update the player's position, required method for game
@@ -19,11 +17,6 @@ Player.prototype.update = function(dt) {
 
     //change player's character based on game level
     this.switchUp();
-};
-
-// Draw the Player on the screen, required method for game
-Player.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.player), this.x, this.y);
 };
 
 /** a handleInput() method.
