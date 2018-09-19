@@ -28,27 +28,26 @@ This game was built with the following technology stack:
 - Set up code files inside your favorite editor i.e VSCode, Sublime Text etc
 
 ## File Structure
-+-- index.HTML <br>
-+-- README.md <br>
-+-- .gitignore <br>
-+-- node_modules <br>
-+-- package.json <br>
-+-- CSS <br>
-|  +--_ style.css <br>
-|
-+-- images <br>
-|  +--_ ...<br>
-|  +--_ ...<br>
-|  +--_ <br>
-+-- js <br>
-|  +--_ app.js <br>
-|  +--_ collectible.js <br>
-|  +--_ enemy.js <br>
-|  +--_ engine.js <br>
-|  +--_ gameObject.js <br>
-|  +--_ obstacle.js <br>
-|  +--_ player.js <br>
-|  +--_ resources.js <br>
+root<br>
+&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;+--_ &nbsp; CSS <br>
+&nbsp;&nbsp;|  &nbsp;&nbsp; +-- style.css <br>
+&nbsp;&nbsp;+--_ &nbsp; images <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- ...<br>
+&nbsp;&nbsp;+--_ &nbsp; js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- app.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- collectible.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- enemy.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- engine.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- gameObject.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- obstacle.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- player.js <br>
+&nbsp;&nbsp;| &nbsp;&nbsp; +-- resources.js <br>
+&nbsp;+-- &nbsp; index.HTML <br>
+&nbsp;+-- &nbsp; README.md <br>
+&nbsp;+-- &nbsp; .gitignore <br>
+&nbsp;+-- &nbsp; node_modules <br>
+&nbsp;+-- &nbsp; package.json <br>
 
 ## Demo
 Visit [https://omoleoo.github.io/frogger](https://omoleoo.github.io/frogger) to play the game live.
