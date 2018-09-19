@@ -13,7 +13,7 @@ This project is a part of the Udacity frontend nanodegree programme. Checkout th
 - Reach the river to complete each level.
 
 
-## Built with:
+## Built with
 
 This game was built with the following technology stack:
 - HTML 5
@@ -22,7 +22,7 @@ This game was built with the following technology stack:
 - Vanilla JavaScript (ES2015).
 
 
-## Run project:
+## Run project
 
 - Clone or download code files from [https://github.com/OmoleOO/frogger.git](https://github.com/OmoleOO/frogger.git).
 - Set up code files inside your favorite editor i.e VSCode, Sublime Text etc
@@ -49,9 +49,6 @@ This game was built with the following technology stack:
 |  +--_ obstacle.js <br>
 |  +--_ player.js <br>
 |  +--_ resources.js <br>
-
-
-
 
 ## Demo
 Visit [https://omoleoo.github.io/frogger](https://omoleoo.github.io/frogger) to play the game live.
