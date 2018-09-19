@@ -30,11 +30,11 @@ This game was built with the following technology stack:
 ## File Structure
 root<br>
 &nbsp;&nbsp;|<br>
-&nbsp;&nbsp;+--_ &nbsp; CSS <br>
+&nbsp;+--_ &nbsp; CSS <br>
 &nbsp;&nbsp;|  &nbsp;&nbsp; +-- style.css <br>
-&nbsp;&nbsp;+--_ &nbsp; images <br>
+&nbsp;+--_ &nbsp; images <br>
 &nbsp;&nbsp;| &nbsp;&nbsp; +-- ...<br>
-&nbsp;&nbsp;+--_ &nbsp; js <br>
+&nbsp;+--_ &nbsp; js <br>
 &nbsp;&nbsp;| &nbsp;&nbsp; +-- app.js <br>
 &nbsp;&nbsp;| &nbsp;&nbsp; +-- collectible.js <br>
 &nbsp;&nbsp;| &nbsp;&nbsp; +-- enemy.js <br>
